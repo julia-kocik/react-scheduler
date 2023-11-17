@@ -1,0 +1,39 @@
+@import '../../../styles/settings.scss';
+
+.container {
+    color: $light-white;
+    min-width: 100px;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    box-shadow: $box-shadow;
+    @media (max-width: $tablet-breakpoint) {
+        font-size: 1.5rem;
+        height: 4rem;
+        min-width: 150px;
+        margin: 1rem 0;
+    }
+    @media (max-width: $mobile-breakpoint) {
+        font-size: 2rem;
+        height: 4.5rem;
+        min-width: 200px;
+        margin: 1rem 0;
+    }
+}
+
+.red {
+    background-color: $error-color; 
+}
+
+.green { 
+    background-color: $success-color;
+}
+
+.blue { 
+    background-color: $info-color;
+}
