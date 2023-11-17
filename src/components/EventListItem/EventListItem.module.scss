@@ -1,0 +1,63 @@
+@import '../../../styles/settings.scss';
+
+.container {
+    margin: 1.25rem;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    @media (max-width: $tablet-breakpoint) {
+        margin: 2.5rem;
+        grid-template-columns: 1.25fr 0.75fr;
+    }
+    @media (max-width: $mobile-breakpoint) {
+        height: 50vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .dataContainer {
+        padding: 0 1rem;
+        @media (max-width: $tablet-breakpoint) {
+            display: grid;
+            align-items: center;
+        }
+        p {
+            margin: 17px 0;
+        }
+        .dataSubContainer {
+            margin: 1rem 0;
+            input {
+                margin: 0;
+                padding: 0;
+                border-radius: 0.25rem;
+                border: 2px solid $color-black;
+                @media (max-width: $tablet-breakpoint) {
+                    height: 2.5rem;
+                    width: 60%;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .btnsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: $mobile-breakpoint) {
+            border-top: 3px solid $light-gray;
+        }
+        .cancel {
+            position: absolute;
+            right: 2rem;
+            top: 0.5rem;
+            font-size: 1.25rem;
+            cursor: pointer;
+            @media (max-width: $tablet-breakpoint) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
