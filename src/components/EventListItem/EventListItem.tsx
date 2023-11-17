@@ -21,7 +21,7 @@ interface FormFields {
   newName: string;
   newSurname: string;
   newEmail: string;
-  newDate: Date | string;
+  newDate: string;
 }
 
 
@@ -78,7 +78,7 @@ export default function EventListItem({id, name, surname, email, date, setToastI
         try {
           setIsUpdating(true)
           let url = `${apiUrl}/api/v1/event/${id}?`
-          if(newName.length === 0 && newSurname.length === 0 && newEmail.length === 0 && typeof newDate === 'string') {
+          if(newName.length === 0 && newSurname.length === 0 && newEmail.length === 0 && newDate.length === 0) {
             showToast('You have not provided any argument to update', 'red', setToastInfo)
             return; 
           }
