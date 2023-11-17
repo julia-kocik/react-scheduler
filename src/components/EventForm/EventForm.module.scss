@@ -1,0 +1,44 @@
+@import '../../../styles/settings.scss';
+
+.container {
+    border-right: 3px solid $light-gray;
+    display: grid;
+    place-items: center;
+    @media (max-width: $tablet-breakpoint) {
+        border-right: none;
+    }
+    .form {
+        display: grid;
+        width: 400px;
+        @media (max-width: $tablet-breakpoint) {
+            width: 720px; 
+            margin-top: 8rem;  
+        }
+        @media (max-width: $mobile-breakpoint) {
+            width: 520px; 
+        }
+        .formItem {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            margin: 1rem 0;
+            label {
+                font-weight: bold;
+            }
+            input {
+                margin: 0;
+                padding: 0;
+                border-radius: 0.25rem;
+                border: 2px solid $color-black;
+                height: 2rem;
+                @media (max-width: $tablet-breakpoint) {
+                    height: 3rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+        button {
+            width: 50%;
+            justify-self: center;
+        }
+    }
+}
