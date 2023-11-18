@@ -66,7 +66,7 @@ export default function EventForm({ setForceFetchAfterPost, toastInfo, setToastI
       showToast('Event successfully created!', 'green', setToastInfo)
       setForceFetchAfterPost(true)
     } catch (error: unknown) {
-      showToast('Error occured when data submitting, please try again later.', 'red', setToastInfo)
+      showToast('Error occurred when data submitting, please try again later.', 'red', setToastInfo)
     } finally {
       setIsSubmitting(false)
     }
