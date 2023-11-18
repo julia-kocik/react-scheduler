@@ -32,7 +32,7 @@ export default function Homepage() {
         }
         setLoading(false)
       } catch (error) {
-        showToast('Error occured when data fetching, please try again later.', 'red', setToastInfo)
+        showToast('Error occurred when data fetching, please try again later.', 'red', setToastInfo)
       } finally {
         setForceFetchAfterPost(false)
         setForceFetchAfterDelete(false)
