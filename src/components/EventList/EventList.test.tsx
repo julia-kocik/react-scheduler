@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import EventList from './EventList'
 import '@testing-library/jest-dom'
 import { Dispatch, SetStateAction } from 'react';
@@ -12,7 +12,7 @@ describe('EventList', () => {
     jest.clearAllMocks();
   });
 
-  test('renders EventList component', () => {
+  test('renders no events text, when eventsData is empty', () => {
     render(
       <EventList 
         setToastInfo={setToastInfo} 
@@ -24,7 +24,7 @@ describe('EventList', () => {
     expect(screen.getByText(/No events saved yet/)).toBeInTheDocument();
   });
 
-  test('renders EventList component', () => {
+  test('renders eventsData, when is not empty', () => {
     render(
       <EventList 
         setToastInfo={setToastInfo} 

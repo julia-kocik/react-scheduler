@@ -1,12 +1,10 @@
-/**
- * @jest-environment jsdom
- */
-import { fireEvent, render, screen } from '@testing-library/react'
-import Toast from './Toast'
+import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import { Dispatch, SetStateAction } from 'react';
+import Toast from './Toast';
 
-it('renders Toast component', () => {
-  render(<Toast message='Hello' color='red'/>);
-  // Add your assertions or further test logic here
+describe('Toast', () => {
+  test('renders Toast component', () => {
+    render(<Toast message='Hello' color='red'/>);
+    expect(screen.getByText(/Hello/)).toBeInTheDocument();
+  });
 });
