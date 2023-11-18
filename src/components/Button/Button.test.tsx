@@ -1,12 +1,11 @@
-/**
- * @jest-environment jsdom
- */
-import { fireEvent, render, screen } from '@testing-library/react'
-import Button from './Button'
+import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
+import Button from './Button';
 
-it('renders Toast component', () => {
-  const onClickHandler: () => void = jest.fn();
+describe('Toast', () => {
+  test('renders Toast component', () => {
+    const onClickHandler: () => void = jest.fn();
   render(<Button title='Hello' color='red' onClickHandler={onClickHandler}/>);
-  // Add your assertions or further test logic here
+    expect(screen.getByText(/Hello/)).toBeInTheDocument();
+  });
 });

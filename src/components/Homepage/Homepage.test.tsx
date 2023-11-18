@@ -2,13 +2,13 @@ import { act, render, screen, waitFor } from '@testing-library/react'
 import Homepage from './Homepage'
 import '@testing-library/jest-dom'
 import axios from 'axios';
-
+import { Dispatch, SetStateAction } from 'react';
 
 describe('Homepage', () => {
-  const setToastInfoMock = jest.fn();
-  const setForceFetchAfterPostMock = jest.fn();
-  const setForceFetchAfterDeleteMock = jest.fn();
-  const setForceFetchAfterUpdateMock = jest.fn();
+  // const setForceFetchAfterPostMock: Dispatch<SetStateAction<boolean>> = jest.fn();
+  // const setForceFetchAfterDeleteMock: Dispatch<SetStateAction<boolean>> = jest.fn();
+  // const setForceFetchAfterUpdateMock: Dispatch<SetStateAction<boolean>> = jest.fn();
+  
   beforeEach(() => {
     jest.clearAllMocks(); 
     render(<Homepage />)   
@@ -36,12 +36,9 @@ describe('Homepage', () => {
     expect(screen.getByText(/Loading/i)).toBeInTheDocument();
 
     await waitFor(() => {
-      expect(screen.getByText(/Error occurred when data fetching, please try again later./))
+      expect(screen.queryByText(/Loading/i)).toBeNull();
+      expect(screen.findByText(/Error occurred when data fetching, please try again later./))
     });
-    await act(async () => {
-      setForceFetchAfterPostMock(false);
-      setForceFetchAfterDeleteMock(false);
-      setForceFetchAfterUpdateMock(false);
-    });
+    
   });
 });
