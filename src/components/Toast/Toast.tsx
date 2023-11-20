@@ -1,15 +1,12 @@
-import styles from './Toast.module.scss';
-
+import styles from "./Toast.module.scss";
 
 interface ToastProps {
   message: string;
   color: string;
 }
 
-export default function Toast({message, color}: ToastProps) {
+export default function Toast({ message, color }: ToastProps) {
   return (
-    <div className={`${styles.container} ${styles[color]}`}>
-      {message}
-    </div>
+    <div className={`${styles.container} ${styles[color]}`}>{message}</div>
   );
 }
