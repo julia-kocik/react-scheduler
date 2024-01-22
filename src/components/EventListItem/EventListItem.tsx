@@ -165,7 +165,7 @@ export default function EventListItem({
           </p>
         </div>
       ) : (
-        <form className={styles.dataContainer}>
+        <form className={styles.updateContainer}>
           {fieldsArray.map((el, index) => {
             const [key, value] = el;
             return (

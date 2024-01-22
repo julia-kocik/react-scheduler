@@ -6,7 +6,7 @@
     box-shadow: $box-shadow;
     height: 180px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 55% 45%;
     position: relative;
     @media (max-width: $tablet-breakpoint) {
         margin: 2.5rem;
@@ -19,6 +19,36 @@
         grid-template-rows: 1fr 1fr;
         margin: 1rem 0rem;
     }
+    .updateContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .dataSubContainer {
+            margin: 0;
+            padding: 0 1.75rem;
+            @media (max-width: $mobile-breakpoint) {
+                padding: 0 4rem;
+            }
+            input {
+                margin: 0.25rem 0;
+                padding: 0;
+                border-radius: 0.25rem;
+                width: 180px;
+                border: 2px solid $grey;
+                @media (max-width: $tablet-breakpoint) {
+                    height: 2.5rem;
+                    font-size: 1rem;
+                    margin: 0.5rem 0;
+                }
+                @media (max-width: $mobile-breakpoint) {
+                    height: 1.25rem;
+                    font-size: 0.75rem;
+                    margin: 1rem 0;
+                    width: 140px;
+                }
+            }
+        }
+    }
     .dataContainer {
         padding: 0 1.75rem;
         display: flex;
@@ -30,20 +60,6 @@
         }
         p {
             margin: 0.25rem 0;
-        }
-        .dataSubContainer {
-            margin: 1rem 0;
-            input {
-                margin: 0;
-                padding: 0;
-                border-radius: 0.25rem;
-                border: 2px solid $color-black;
-                @media (max-width: $tablet-breakpoint) {
-                    height: 2.5rem;
-                    width: 60%;
-                    font-size: 2rem;
-                }
-            }
         }
     }
     .btnsContainer {
