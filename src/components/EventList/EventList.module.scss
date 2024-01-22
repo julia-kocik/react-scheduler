@@ -1,6 +1,9 @@
+@import '../../settings.scss';
+
 .container {
     overflow-y: auto;
     max-height: 100%;
+    padding: 0.5rem 0;
 }
 
 .noEventsMsg {

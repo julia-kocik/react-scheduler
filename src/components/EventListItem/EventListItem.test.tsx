@@ -17,7 +17,7 @@ const eventListItem = {
   name: "John",
   surname: "Doe",
   email: "john.doe@example.com",
-  date: new Date(),
+  date: new Date(2023, 11, 17),
 };
 
 describe("EventListItem", () => {

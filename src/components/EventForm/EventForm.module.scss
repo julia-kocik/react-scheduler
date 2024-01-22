@@ -26,10 +26,12 @@
             }
             input {
                 margin: 0;
-                padding: 0;
+                padding: 0 0.5rem;
                 border-radius: 0.25rem;
                 border: 2px solid $color-black;
                 height: 2rem;
+                background-color: $light-white;
+                font-family: $main-font;
                 @media (max-width: $tablet-breakpoint) {
                     height: 3rem;
                     font-size: 2rem;

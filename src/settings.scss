@@ -1,5 +1,5 @@
 // settings.scss
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mulish&family=Roboto:wght@100&display=swap');;
 
 // Colors
 $info-color: #3498db;
@@ -8,9 +8,11 @@ $error-color: #e74c3c;
 $light-white: rgb(250, 250, 252);
 $light-gray: rgba(200, 200, 208, 1);
 $color-black: #000;
+$light-background-a: aliceblue;
+$light-background-b: rgb(252, 246, 246);
 
 // Fonts
-$main-font: 'Arial', sans-serif;
+$main-font: 'EB Garamond', serif;
 $heading-font: 'Roboto', sans-serif;
 
 // Spacing
