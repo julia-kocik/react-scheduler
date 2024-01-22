@@ -11,11 +11,13 @@
     @media (max-width: $tablet-breakpoint) {
         margin: 2.5rem;
         grid-template-columns: 1.25fr 0.75fr;
+        height: 250px;
     }
     @media (max-width: $mobile-breakpoint) {
         height: 50vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        margin: 1rem 0rem;
     }
     .dataContainer {
         padding: 0 1.75rem;
@@ -56,6 +58,7 @@
             position: absolute;
             border: 1px solid $light-gray;
             border-radius: 50%;
+            color: $grey;
             width: 2rem;
             text-align: center;
             line-height: 2rem;
@@ -67,7 +70,10 @@
             font-weight: 600;
             cursor: pointer;
             @media (max-width: $tablet-breakpoint) {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
+            }
+            @media (max-width: $mobile-breakpoint) {
+                font-size: 1.25rem;
             }
         }
     }

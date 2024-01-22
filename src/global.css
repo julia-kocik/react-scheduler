@@ -23,3 +23,9 @@ a {
     font-size: 1.75rem;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+}

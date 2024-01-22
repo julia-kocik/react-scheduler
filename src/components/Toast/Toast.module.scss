@@ -18,9 +18,11 @@
         height: auto;
     }
     @media (max-width: $mobile-breakpoint) {
-        top: 16rem;
+        top: 3rem;
         height: auto;
         font-size: 2rem;
+        width: 80%;
+        font-weight: normal;
     }
 }
 

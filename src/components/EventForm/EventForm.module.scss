@@ -7,15 +7,20 @@
     @media (max-width: $tablet-breakpoint) {
         border-right: none;
     }
+    @media (max-width: $mobile-breakpoint) {
+        width: 100%; 
+    }
     .form {
         display: grid;
         width: 400px;
         @media (max-width: $tablet-breakpoint) {
-            width: 720px; 
+            width: 80%; 
             margin-top: 8rem;  
         }
         @media (max-width: $mobile-breakpoint) {
-            width: 520px; 
+            width: 100%;
+            justify-content: center; 
+            margin-top: 3rem;
         }
         .formItem {
             display: grid;
@@ -28,7 +33,7 @@
                 margin: 0;
                 padding: 0 0.5rem;
                 border-radius: 0.25rem;
-                border: 2px solid $color-black;
+                border: 2px solid $grey;
                 height: 2rem;
                 background-color: $light-white;
                 font-family: $main-font;
@@ -36,11 +41,19 @@
                     height: 3rem;
                     font-size: 2rem;
                 }
+               
             }
         }
         button {
             width: 50%;
             justify-self: center;
+            @media (max-width: $tablet-breakpoint) {
+                margin-top: 5rem;
+            }
+            @media (max-width: $mobile-breakpoint) {
+                width: 100%;
+                justify-content: center; 
+           }
         }
     }
 }

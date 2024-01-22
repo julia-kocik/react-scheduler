@@ -5,7 +5,7 @@
     display: grid;
     place-items: center;
     @media (max-width: $tablet-breakpoint) {
-        height: auto;
+        height: 80vh;
     }
 }
 
@@ -20,5 +20,9 @@
     @media (max-width: $tablet-breakpoint) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        height: auto;
+        max-height: 2000px;
+        margin: 1rem 0;
+        width: 95%;
     }
 }
