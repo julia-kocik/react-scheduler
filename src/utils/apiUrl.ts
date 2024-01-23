@@ -1,1 +1,1 @@
-export const apiUrl = 'http://scheduler-env.eba-di2rddya.eu-north-1.elasticbeanstalk.com'
+export const apiUrl = 'https://www.nest-scheduler.com'
