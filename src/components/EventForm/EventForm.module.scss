@@ -9,6 +9,7 @@
     }
     @media (max-width: $mobile-breakpoint) {
         width: 100%; 
+        min-height: 900px;
     }
     .form {
         display: grid;
@@ -18,7 +19,7 @@
             margin-top: 8rem;  
         }
         @media (max-width: $mobile-breakpoint) {
-            width: 100%;
+            width: 90%;
             justify-content: center; 
             margin-top: 3rem;
         }
@@ -41,7 +42,11 @@
                     height: 3rem;
                     font-size: 2rem;
                 }
-               
+                @media (max-width: $mobile-breakpoint) {
+                    height: 3rem;
+                    font-size: 1rem;
+                    min-width: 250px;
+                }
             }
         }
         button {
