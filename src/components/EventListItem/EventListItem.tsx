@@ -97,7 +97,7 @@ export default function EventListItem({
           newDate.length === 0
         ) {
           showToast(
-            "You have not provided any argument to update",
+            "You have not provided any argument to update.",
             "red",
             setToastInfo
           );
