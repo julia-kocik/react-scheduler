@@ -189,11 +189,13 @@ export default function EventListItem({
         <span className={styles.cancel} onClick={onDeleteHandler}>
           X
         </span>
-        <Button
-          onClickHandler={onCancelClickHandler}
-          title="Cancel"
-          color="red"
-        />
+        {showUpdateOptions && (
+          <Button
+            onClickHandler={onCancelClickHandler}
+            title="Cancel"
+            color="red"
+          />
+        )}
         {showUpdateOptions ? (
           <Button onClickHandler={onUpdateHandler} title="Save" color="blue" />
         ) : (
