@@ -161,7 +161,7 @@ export default function EventListItem({
             <strong>Email:</strong> {email}
           </p>
           <p>
-            <strong>Date:</strong> {formatDateForInput(date.toString())}
+            <strong>Date:</strong> {date.toString().split("T")[0]}
           </p>
         </div>
       ) : (
