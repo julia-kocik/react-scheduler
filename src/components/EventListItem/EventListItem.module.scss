@@ -50,12 +50,14 @@
                     height: 2.5rem;
                     font-size: 1rem;
                     margin: 0.5rem 0;
+                    width: 250px;
+                    padding: 0.5rem;
                 }
                 @media (max-width: $mobile-breakpoint) {
                     height: 2rem;
                     font-size: 0.75rem;
                     margin: 0.5rem 0;
-                    width: 100%;
+                    width: 90%;
                 }
             }
         }
@@ -104,9 +106,15 @@
             cursor: pointer;
             @media (max-width: $tablet-breakpoint) {
                 font-size: 1.5rem;
+                width: 3rem;
+                line-height: 3rem;
+                height: 3rem;
             }
             @media (max-width: $mobile-breakpoint) {
                 font-size: 1.25rem;
+                width: 2rem;
+                line-height: 2rem;
+                height: 2rem;
             }
         }
     }

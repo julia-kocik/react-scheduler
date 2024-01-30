@@ -41,6 +41,7 @@
                 @media (max-width: $tablet-breakpoint) {
                     height: 3rem;
                     font-size: 2rem;
+                    min-width: 600px;
                 }
                 @media (max-width: $mobile-breakpoint) {
                     height: 3rem;
