@@ -14,17 +14,17 @@
     padding: 0 1rem;
     font-weight: bold;
     @media (max-width: $tablet-breakpoint) {
-        top: 4rem;
+        top: 3rem;
         height: auto;
         padding: 1rem;
         font-size: 2rem;
+        font-weight: normal;
     }
     @media (max-width: $mobile-breakpoint) {
         top: 3rem;
         height: auto;
         font-size: 1.5rem;
         width: 80%;
-        font-weight: normal;
     }
 }
 
