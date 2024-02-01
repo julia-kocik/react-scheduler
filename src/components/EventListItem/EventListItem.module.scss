@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 60% 40%;
     position: relative;
-    @media (max-width: 1300px) {
+    @media (max-width: $small-screen) {
         min-height: 220px;
         max-height: 250px;
     }
@@ -46,6 +46,9 @@
                 border-radius: 0.25rem;
                 width: 180px;
                 border: 2px solid $grey;
+                @media (max-width: $small-screen) {
+                    width: 160px;
+                }
                 @media (max-width: $tablet-breakpoint) {
                     height: 2.5rem;
                     font-size: 1rem;
